@@ -4,6 +4,6 @@ const registerController = require('../app/controllers/RegisterController');
 
 // newsController.index;
 
-router.get('/', registerController.index );
+router.get('', registerController.index );
 
 module.exports = router;

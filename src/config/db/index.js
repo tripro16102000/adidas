@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
+const databaseURL = 'mongodb://localhost:27017/database_website';
+
 async function connect() {
     try {
-        await mongoose.connect('mongodb://localhost:27017/database_website', {
+        await mongoose.connect(databaseURL, {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });

@@ -5,8 +5,8 @@ const router = express.Router();
 
 // newsController.index;
 
-router.get('/search', siteController.search);
-router.get('/', siteController.index );
+
+router.get('', siteController.index );
 
 
 
