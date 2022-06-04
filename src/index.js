@@ -6,13 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const route = require('./routes');
 const db = require('./config/db');
-var timeout = require('connect-timeout')
-//connect database
-app.use(timeout('20s'))
-app.use(haltOnTimedout)
-function haltOnTimedout (req, res, next) {
-    if (!req.timedout) next()
-  }
+
 db.connect();
 //routing
 
