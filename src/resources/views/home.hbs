@@ -1,0 +1,83 @@
+<div class="img-ads">
+    <div class="img-ads-title">
+        <h1>YZY 350 V2 CMPCT </h1>
+        <h1>SLATE CARBON</h1>
+        <h6>OPEN FOR SALE ON ADIDAS APP. DOWNLOAD THE APP, SIGN UP, JOIN NOW</h6>
+        <i class="fa-solid fa-right-long"></i>
+        <button type="button" class="btn btn-dark">ORDER NOW </button>
+    </div>
+    <div>
+        <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/280175479_1248691472652905_6377729515253396340_n.png?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=iSYOLaJMwlYAX_1QYzI&_nc_ht=scontent.fhan15-1.fna&oh=03_AVKZLPCqeN_u7dSDoLW8E5fRN6VaJgM7NFUivuyj2x6Wfg&oe=62C0D4DC"
+            alt="">
+    </div>
+</div>
+<div class="mt-4">
+    <h1>STILL INTERESTED?</h1>
+</div>
+
+<div class="mt-4">
+    <div class="row">
+        {{#each contents}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card card-contents-item">
+                <a href="/products/{{this.slug}}">
+                    <img class="card-img-top block-image" src="{{this.image}}" alt="Card image cap">
+                    <img class="card-img-top hover-image" src="{{this.imageHover}}" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">{{this.name}}</h5>
+                    <p class="card-text">{{this.price}}</p>
+                    <a href="/products/{{this.slug}}" class="btn btn-dark">Buy</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+</div>
+
+<div class="mt-4">
+    <h1>WHAT'S HOT?</h1>
+</div>
+
+<div class="banner">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+            src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/viVN/Images/training-ss22-KarlieKlossXadidas-Q1-launch-HP-teasercarousel_tcm337-808517.jpg"
+            alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">CREATED FOR THE CURIOUS</h5>
+            <p class="card-text">A new collection designed to embrace the freedom of your sports style and the
+                creativity of your lifestyle.</p>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+            src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/viVN/Images/Teaser_Carousel_HP_tcm337-888226.jpg"
+            alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">MY RETROPY​</h5>
+            <p class="card-text">I am free to choose who I am.</p>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+            src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/viVN/Images/running-ss22-4dfwd-x-parley-launch-hp-teaser-carousel-card-dual-2d-d_tcm337-820245.jpg"
+            alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">4DFWD X PARLEY. TAKE ACTION FOR OUR OCEANS.</h5>
+            <p class="card-text">
+                Don't just speak plainly. Let's do it.</p>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+            src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/viVN/Images/sustainability-ss22-rfto-tease-HP-GLP-PH-tcc-Ninali-d_tcm337-865907.jpg"
+            alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">TOGETHER, NOTHING IS IMPOSSIBLE</h5>
+            <p class="card-text">
+Find out how you can join hands to end plastic waste</p>
+        </div>
+    </div>
+</div>

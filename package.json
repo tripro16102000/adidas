@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "begin": "node src/index.js",
+    "start": "nodemon --inspect src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass --watch src/resources/scss/ -o src/public/css/"
+  },
+  "author": "tri",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "mongoose": "^6.3.4",
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.1",
+    "swiper": "^8.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
