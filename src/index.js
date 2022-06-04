@@ -6,12 +6,9 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const route = require('./routes');
 const db = require('./config/db');
-const dotenv = require('dotenv')
 
-dotenv.config();
-const URI = process.env.DATABASE_URL;
 
-db.connect(URI);
+db.connect();
 //routing
 
 route(app);
