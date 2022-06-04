@@ -3,9 +3,8 @@ const path = require('path');
 const morgan = require('morgan');
 const { engine } = require ('express-handlebars');
 const app = express();
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 const route = require('./routes');
-const host = '0.0.0.0';
 const db = require('./config/db');
 //connect database
 
@@ -15,8 +14,8 @@ db.connect();
 route(app);
 
  //starting
-app.listen(port, host, ()=> {
-    console.log(`Sever starting on port ${port}`)
+app.listen(PORT, ()=> {
+    console.log(`Sever starting on port ${PORT}`)
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
